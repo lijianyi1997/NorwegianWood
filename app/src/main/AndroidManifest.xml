@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.norwegianwood">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mine_launcher"
+        android:roundIcon="@mipmap/mine_launcher"
+        android:label="挪威的森林"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NorwegianWood">
+        <activity android:name=".StillsListActivity" android:label="经典剧照"
+            android:parentActivityName=".MovieContentActivity"></activity>
+        <activity android:name=".BookContentActivity" android:label="内容简介"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ActorsListActivity" android:label="演职员表"
+            android:parentActivityName=".MovieContentActivity"/>
+        <activity android:name=".MovieContentActivity" android:label="挪威的森林【日】"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="挪威的森林">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="780"/>
+
+    </application>
+
+</manifest>
